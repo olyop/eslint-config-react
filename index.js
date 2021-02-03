@@ -1,5 +1,8 @@
 module.exports = {
-	extends: "airbnb-typescript",
+	extends: [
+		"airbnb-typescript",
+		"@oly_op/eslint-config"
+	],
 	parserOptions: {
 		ecmaFeatures: {
 			jsx: true,

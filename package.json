@@ -2,7 +2,7 @@
 	"license": "MIT",
 	"private": false,
 	"main": "index.js",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"name": "@oly_op/eslint-config-react",
 	"description": "@oly_op/eslint-config-react",
 	"bugs": "https://github.com/olyop/eslint-config-react/issues",
@@ -30,6 +30,7 @@
 		"@typescript-eslint/eslint-plugin": "^4.14.1"
 	},
 	"dependencies": {
+		"@oly_op/eslint-config": "^2.0.0",
 		"eslint": "^7.8.1",
 		"eslint-config-airbnb-typescript": "^12.0.0"
 	}
