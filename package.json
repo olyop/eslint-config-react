@@ -1,0 +1,36 @@
+{
+	"license": "MIT",
+	"private": false,
+	"main": "index.js",
+	"version": "1.0.0",
+	"name": "@oly_op/eslint-config-react",
+	"description": "@oly_op/eslint-config-react",
+	"bugs": "https://github.com/olyop/eslint-config-react/issues",
+	"homepage": "https://github.com/olyop/eslint-config-react/blob/master/README.md",
+	"author": {
+		"name": "Oliver Plummer",
+		"email": "oliver.plummer@outlook.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/olyop/eslint-config-react.git"
+	},
+	"scripts": {
+		"postpublish": "npm run push",
+		"sync": "git checkout . && git remote update && git pull",
+		"push": "clear && git status && git add -A && git commit -m \"Update\" && git push -u origin main"
+	},
+	"peerDependencies": {
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-react": "^7.22.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"@typescript-eslint/eslint-plugin": "^4.14.1"
+	},
+	"dependencies": {
+		"eslint": "^7.8.1",
+		"eslint-config-airbnb-typescript": "^12.0.0"
+	}
+}
