@@ -1,7 +1,7 @@
 module.exports = {
 	extends: [
-		"@oly_op",
 		"airbnb-typescript",
+		"@oly_op",
 	],
 	parserOptions: {
 		ecmaFeatures: {
