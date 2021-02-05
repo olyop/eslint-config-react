@@ -2,7 +2,7 @@
 	"license": "MIT",
 	"private": false,
 	"main": "index.js",
-	"version": "2.2.0",
+	"version": "2.3.0",
 	"name": "@oly_op/eslint-config-react",
 	"description": "@oly_op/eslint-config-react",
 	"bugs": "https://github.com/olyop/eslint-config-react/issues",
@@ -21,7 +21,7 @@
 		"push": "clear && git status && git add -A && git commit -m \"Update\" && git push"
 	},
 	"dependencies": {
-		"@oly_op/eslint-config": "^3.3.0",
+		"@oly_op/eslint-config": "^3.4.0",
 		"eslint-config-airbnb-typescript": "^12.0.0"
 	}
 }
