@@ -2,7 +2,7 @@
 	"license": "MIT",
 	"private": false,
 	"main": "index.js",
-	"version": "2.4.2",
+	"version": "2.4.3",
 	"name": "@oly_op/eslint-config-react",
 	"description": "@oly_op/eslint-config-react",
 	"bugs": "https://github.com/olyop/eslint-config-react/issues",
@@ -21,7 +21,7 @@
 		"push": "clear && git status && git add -A && git commit -m \"Update\" && git push"
 	},
 	"dependencies": {
-		"@oly_op/eslint-config": "^3.6.4",
+		"@oly_op/eslint-config": "^3.6.5",
 		"eslint-config-airbnb-typescript": "^12.3.1",
 		"eslint-plugin-jsx-a11y": "^6.4.1",
 		"eslint-plugin-react": "^7.22.0",
