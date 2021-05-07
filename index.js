@@ -22,6 +22,7 @@ module.exports = {
 		"react-hooks/exhaustive-deps": "off",
 		"react/require-default-props": "off",
 		"react/jsx-indent": ["error", "tab"],
+		"react/jsx-props-no-spreading": "off",
 		"react/jsx-indent-props": ["error", "tab"],
 		"react/jsx-fragments": ["error", "element"],
 		"jsx-a11y/click-events-have-key-events": "off",
