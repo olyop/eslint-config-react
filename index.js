@@ -41,6 +41,12 @@ module.exports = {
 			"error",
 			"element",
 		],
+		"react/no-unstable-nested-components": [
+			"error",
+			{
+				"allowAsProps": true
+			}
+		],
 		"react/function-component-definition": [
 			"error",
 			{
