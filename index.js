@@ -24,6 +24,7 @@ module.exports = {
 		"react-hooks/exhaustive-deps": "off",
 		"react/require-default-props": "off",
 		"react/jsx-props-no-spreading": "off",
+		"react/jsx-no-useless-fragment": "off",
 		"jsx-a11y/click-events-have-key-events": "off",
 		"jsx-a11y/label-has-associated-control": "off",
 		"jsx-a11y/control-has-associated-label": "off",
@@ -44,12 +45,6 @@ module.exports = {
 			"error",
 			{
 				"namedComponents": "arrow-function"
-			}
-		],
-		"react/jsx-no-useless-fragment": [
-			"error",
-			{
-				"allowExpressions": true
 			}
 		],
 		"react/jsx-tag-spacing": [
