@@ -2,7 +2,7 @@
 	"license": "MIT",
 	"private": false,
 	"main": "index.js",
-	"version": "3.0.2",
+	"version": "3.0.3",
 	"name": "@oly_op/eslint-config-react",
 	"description": "@oly_op/eslint-config-react",
 	"bugs": "https://github.com/olyop/eslint-config-react/issues",
