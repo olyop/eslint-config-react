@@ -28,12 +28,6 @@ module.exports = {
 		"jsx-a11y/label-has-associated-control": "off",
 		"jsx-a11y/control-has-associated-label": "off",
 		"jsx-a11y/no-static-element-interactions": "off",
-		"react/function-component-definition": [
-			"error",
-			{
-				"namedComponents": "arrow-function"
-			}
-		],
 		"react/jsx-indent": [
 			"error",
 			"tab",
@@ -45,6 +39,18 @@ module.exports = {
 		"react/jsx-fragments": [
 			"error",
 			"element",
+		],
+		"react/function-component-definition": [
+			"error",
+			{
+				"namedComponents": "arrow-function"
+			}
+		],
+		"react/jsx-no-useless-fragment": [
+			"error",
+			{
+				"allowExpressions": true
+			}
 		],
 		"react/jsx-tag-spacing": [
 			"error",
