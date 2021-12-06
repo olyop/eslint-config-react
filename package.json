@@ -29,9 +29,9 @@
 		"eslint-plugin-react-hooks": "4"
 	},
 	"devDependencies": {
-		"eslint": "8.2.0"
+		"eslint": "8.4.0"
 	},
 	"dependencies": {
-		"@oly_op/eslint-config": "5.1.5"
+		"@oly_op/eslint-config": "5.1.6"
 	}
 }
