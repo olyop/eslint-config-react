@@ -2,7 +2,7 @@
 	"license": "MIT",
 	"private": false,
 	"main": "index.js",
-	"version": "3.0.7",
+	"version": "3.0.8",
 	"name": "@oly_op/eslint-config-react",
 	"description": "@oly_op/eslint-config-react",
 	"bugs": "https://github.com/olyop/eslint-config-react/issues",
@@ -21,17 +21,20 @@
 		"push": "git add -A && git commit -m \"Update\" && git push"
 	},
 	"peerDependencies": {
+		"@oly_op/eslint-config": "5",
+		"@typescript-eslint/eslint-plugin": "5",
+		"@typescript-eslint/parser": "5",
 		"eslint": "8",
 		"eslint-config-airbnb": "19",
+		"eslint-config-airbnb-typescript": "16",
 		"eslint-plugin-import": "2",
 		"eslint-plugin-jsx-a11y": "6",
 		"eslint-plugin-node": "11",
+		"eslint-plugin-promise": "6",
+		"eslint-plugin-react": "7",
 		"eslint-plugin-react-hooks": "4"
 	},
 	"devDependencies": {
-		"eslint": "8.4.0"
-	},
-	"dependencies": {
-		"@oly_op/eslint-config": "5.1.6"
+		"eslint": "8.7.0"
 	}
 }

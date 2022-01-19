@@ -1,9 +1,9 @@
 module.exports = {
 	extends: [
-		"@oly_op",
 		"airbnb",
 		"airbnb/hooks",
-		"airbnb-typescript"
+		"airbnb-typescript",
+		"@oly_op"
 	],
 	parserOptions: {
 		ecmaFeatures: {
