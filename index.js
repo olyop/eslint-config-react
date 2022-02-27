@@ -24,6 +24,7 @@ module.exports = {
 		"react-hooks/exhaustive-deps": "off",
 		"react/require-default-props": "off",
 		"react/jsx-props-no-spreading": "off",
+		"jsx-a11y/tabindex-no-positive": "off",
 		"react/jsx-no-useless-fragment": "off",
 		"jsx-a11y/click-events-have-key-events": "off",
 		"jsx-a11y/label-has-associated-control": "off",
@@ -57,6 +58,14 @@ module.exports = {
 			"error",
 			{
 				"beforeSelfClosing": "never"
+			}
+		],
+		"jsx-a11y/anchor-is-valid": [
+			"error",
+			{
+				"specialLink": ["to"],
+				"aspects": ["noHref"],
+				"components": ["Link"]
 			}
 		]
 	}
