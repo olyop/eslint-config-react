@@ -1,9 +1,7 @@
 module.exports = {
 	extends: [
-		"@oly_op",
-		"airbnb",
 		"airbnb/hooks",
-		"airbnb-typescript",
+		"plugin:jsx-a11y/recommended"
 	],
 	parserOptions: {
 		ecmaFeatures: {
@@ -16,20 +14,12 @@ module.exports = {
 		},
 	},
 	rules: {
-		"react/prop-types": "off",
-		"jsx-a11y/no-autofocus": "off",
 		"react/no-children-prop": "off",
 		"react/no-unused-prop-types": "off",
-		"jsx-a11y/media-has-caption": "off",
 		"react-hooks/exhaustive-deps": "off",
 		"react/require-default-props": "off",
-		"react/jsx-props-no-spreading": "off",
 		"jsx-a11y/tabindex-no-positive": "off",
 		"react/jsx-no-useless-fragment": "off",
-		"jsx-a11y/click-events-have-key-events": "off",
-		"jsx-a11y/label-has-associated-control": "off",
-		"jsx-a11y/control-has-associated-label": "off",
-		"jsx-a11y/no-static-element-interactions": "off",
 		"react/jsx-indent": [
 			"error",
 			"tab",
