@@ -1,5 +1,7 @@
 module.exports = {
 	extends: [
+		"airbnb",
+		"airbnb-typescript",
 		"airbnb/hooks",
 		"plugin:jsx-a11y/recommended"
 	],
