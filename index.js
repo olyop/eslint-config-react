@@ -21,6 +21,7 @@ module.exports = {
 		"react/no-unused-prop-types": "off",
 		"react-hooks/exhaustive-deps": "off",
 		"react/require-default-props": "off",
+		"react/jsx-props-no-spreading": "off",
 		"jsx-a11y/tabindex-no-positive": "off",
 		"react/jsx-no-useless-fragment": "off",
 		"react/jsx-indent": [
