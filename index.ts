@@ -5,7 +5,7 @@ const configuration: TSESLint.Linter.Config = {
 		"airbnb",
 		"airbnb-typescript",
 		"airbnb/hooks",
-		"plugin:jsx-a11y/recommended"
+		"plugin:jsx-a11y/recommended",
 	],
 	parserOptions: {
 		ecmaFeatures: {
@@ -26,6 +26,7 @@ const configuration: TSESLint.Linter.Config = {
 		"react/jsx-props-no-spreading": "off",
 		"jsx-a11y/tabindex-no-positive": "off",
 		"react/jsx-no-useless-fragment": "off",
+		"jsx-a11y/label-has-associated-control": "off",
 		"react/jsx-indent": [
 			"error",
 			"tab",
