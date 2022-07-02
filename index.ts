@@ -39,6 +39,12 @@ const configuration: TSESLint.Linter.Config = {
 			"error",
 			"element",
 		],
+		"react/jsx-key": [
+			"error",
+			{
+				"warnOnDuplicates": true
+			}
+		],
 		"react/no-unstable-nested-components": [
 			"error",
 			{
