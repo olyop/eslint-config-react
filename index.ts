@@ -7,6 +7,9 @@ const configuration: TSESLint.Linter.Config = {
 		"airbnb/hooks",
 		"plugin:jsx-a11y/recommended",
 	],
+	plugins: [
+		"jsx-a11y",
+	],
 	parserOptions: {
 		ecmaFeatures: {
 			jsx: true,
@@ -42,36 +45,36 @@ const configuration: TSESLint.Linter.Config = {
 		"react/jsx-key": [
 			"error",
 			{
-				"warnOnDuplicates": true
-			}
+				"warnOnDuplicates": true,
+			},
 		],
 		"react/no-unstable-nested-components": [
 			"error",
 			{
-				"allowAsProps": true
-			}
+				"allowAsProps": true,
+			},
 		],
 		"react/function-component-definition": [
 			"error",
 			{
-				"namedComponents": "arrow-function"
-			}
+				"namedComponents": "arrow-function",
+			},
 		],
 		"react/jsx-tag-spacing": [
 			"error",
 			{
-				"beforeSelfClosing": "never"
-			}
+				"beforeSelfClosing": "never",
+			},
 		],
 		"jsx-a11y/anchor-is-valid": [
 			"error",
 			{
 				"specialLink": ["to"],
 				"aspects": ["noHref"],
-				"components": ["Link"]
-			}
-		]
-	}
+				"components": ["Link"],
+			},
+		],
+	},
 }
 
 module.exports = configuration
