@@ -1,15 +1,9 @@
-import { TSESLint } from "@typescript-eslint/utils"
+// import type { TSESLint } from "@typescript-eslint/utils";
 
-const configuration: TSESLint.Linter.Config = {
-	extends: [
-		"airbnb",
-		"airbnb-typescript",
-		"airbnb/hooks",
-		"plugin:jsx-a11y/recommended",
-	],
-	plugins: [
-		"jsx-a11y",
-	],
+// const configuration: TSESLint.Linter.ConfigType = {
+const configuration = {
+	extends: ["airbnb", "airbnb-typescript", "airbnb/hooks", "plugin:jsx-a11y/recommended"],
+	plugins: ["jsx-a11y"],
 	parserOptions: {
 		ecmaFeatures: {
 			jsx: true,
@@ -30,18 +24,9 @@ const configuration: TSESLint.Linter.Config = {
 		"jsx-a11y/tabindex-no-positive": "off",
 		"react/jsx-no-useless-fragment": "off",
 		"jsx-a11y/label-has-associated-control": "off",
-		"react/jsx-indent": [
-			"error",
-			"tab",
-		],
-		"react/jsx-indent-props": [
-			"error",
-			"tab",
-		],
-		"react/jsx-fragments": [
-			"error",
-			"element",
-		],
+		"react/jsx-indent": ["error", "tab"],
+		"react/jsx-indent-props": ["error", "tab"],
+		"react/jsx-fragments": ["error", "element"],
 		"react/jsx-key": [
 			"error",
 			{
@@ -75,6 +60,6 @@ const configuration: TSESLint.Linter.Config = {
 			},
 		],
 	},
-}
+};
 
-module.exports = configuration
+export default configuration;
