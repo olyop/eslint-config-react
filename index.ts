@@ -1,7 +1,6 @@
-// import type { TSESLint } from "@typescript-eslint/utils";
+import type { TSESLint } from "@typescript-eslint/utils";
 
-// const configuration: TSESLint.Linter.ConfigType = {
-const configuration = {
+const configuration: TSESLint.Linter.ConfigType = {
 	extends: ["airbnb", "airbnb-typescript", "airbnb/hooks", "plugin:jsx-a11y/recommended"],
 	plugins: ["jsx-a11y"],
 	parserOptions: {
