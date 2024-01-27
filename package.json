@@ -3,7 +3,7 @@
 	"license": "MIT",
 	"type": "commonjs",
 	"main": "index.js",
-	"version": "4.1.0",
+	"version": "4.1.1",
 	"name": "@oly_op/eslint-config-react",
 	"description": "@oly_op/eslint-config-react",
 	"bugs": "https://github.com/olyop/eslint-config-react/issues",
@@ -34,12 +34,12 @@
 		"eslint-plugin-jsx-a11y": "6.8.0"
 	},
 	"devDependencies": {
-		"@oly_op/cspell-dict": "1.1.2",
-		"@oly_op/eslint-config": "6.5.5",
-		"@oly_op/prettier-config": "1.7.8",
+		"@oly_op/cspell-dict": "1.1.5",
+		"@oly_op/eslint-config": "6.5.7",
+		"@oly_op/prettier-config": "1.7.9",
 		"@oly_op/tsconfig": "1.2.0",
-		"@types/node": "20.10.5",
-		"@typescript-eslint/utils": "6.15.0",
+		"@types/node": "20.11.7",
+		"@typescript-eslint/utils": "6.19.1",
 		"eslint-config-airbnb": "19.0.4",
 		"eslint-plugin-jsx-a11y": "6.8.0",
 		"rimraf": "5.0.5"
