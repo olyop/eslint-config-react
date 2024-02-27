@@ -1,47 +1,71 @@
 {
-	"private": false,
-	"license": "MIT",
 	"type": "commonjs",
-	"main": "index.js",
-	"version": "4.1.1",
 	"name": "@oly_op/eslint-config-react",
+	"version": "4.3.3",
 	"description": "@oly_op/eslint-config-react",
-	"bugs": "https://github.com/olyop/eslint-config-react/issues",
 	"homepage": "https://github.com/olyop/eslint-config-react/blob/master/README.md",
+	"bugs": {
+		"url": "https://github.com/olyop/eslint-config-react/issues",
+		"email": "oliver.plummer@outlook.com"
+	},
+	"license": "MIT",
 	"author": {
 		"name": "Oliver Plummer",
 		"email": "oliver.plummer@outlook.com"
 	},
+	"files": [
+		"index.js"
+	],
+	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/olyop/eslint-config-react.git"
 	},
-	"volta": {
-		"node": "21.2.0",
-		"npm": "10.2.4"
-	},
-	"files": [
-		"index.js"
-	],
 	"scripts": {
-		"clean": "rimraf index.js",
-		"build": "tsc",
-		"postpublish": "npm run push",
-		"push": "git add -A && git commit -m \"Update\" && git push"
-	},
-	"peerDependencies": {
-		"eslint-config-airbnb": "19.0.4",
-		"eslint-plugin-jsx-a11y": "6.8.0"
+		"clean": "rimraf index.js .eslintrc.js eslint-config.js",
+		"compile-to-cjs": "node -e \"const fs = require('fs'), filename = 'eslint-config.js'; fs.writeFileSync(filename, fs.readFileSync(filename).toString().replace('exports.default', 'module.exports'));\"",
+		"compile-remove-first-two-lines": "node -e \"const fs = require('fs'), filename = 'eslint-config.js'; fs.writeFileSync(filename, fs.readFileSync(filename).toString().split('\\n').slice(2).join('\\n'));\"",
+		"compile": "tsc && npm run compile-to-cjs && npm run compile-remove-first-two-lines",
+		"duplicate": "node -e \"const fs = require('fs'), filename = 'eslint-config.js'; fs.copyFileSync(filename, 'index.js'); fs.copyFileSync(filename, '.eslintrc.js');\"",
+		"build": "npm run clean && npm run compile && npm run duplicate",
+		"increment-version": "npm version patch --no-git-tag-version",
+		"prepublishOnly": "npm run increment-version && npm run build"
 	},
 	"devDependencies": {
 		"@oly_op/cspell-dict": "1.1.5",
-		"@oly_op/eslint-config": "6.5.7",
-		"@oly_op/prettier-config": "1.7.9",
+		"@oly_op/eslint-config": "6.7.15",
+		"@oly_op/prettier-config": "1.8.2",
 		"@oly_op/tsconfig": "1.2.0",
-		"@types/node": "20.11.7",
-		"@typescript-eslint/utils": "6.19.1",
+		"@types/node": "20.11.20",
+		"@types/react": "18.2.59",
+		"@types/react-dom": "18.2.19",
+		"@typescript-eslint/utils": "7.1.0",
 		"eslint-config-airbnb": "19.0.4",
 		"eslint-plugin-jsx-a11y": "6.8.0",
+		"eslint-plugin-react-hooks": "4.6.0",
+		"npm-check-updates": "16.14.15",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
 		"rimraf": "5.0.5"
+	},
+	"peerDependencies": {
+		"eslint-config-airbnb": "19.0.4",
+		"eslint-config-airbnb-typescript": "17.1.0",
+		"eslint-plugin-jsx-a11y": "6.8.0",
+		"eslint-plugin-react-hooks": "4.6.0"
+	},
+	"overrides": {
+		"eslint-config-airbnb-typescript": {
+			"@typescript-eslint/eslint-plugin": "7.1.0",
+			"@typescript-eslint/parser": "7.1.0"
+		}
+	},
+	"engines": {
+		"node": "21.6.2",
+		"npm": "10.4.0"
+	},
+	"volta": {
+		"node": "21.6.2",
+		"npm": "10.4.0"
 	}
 }

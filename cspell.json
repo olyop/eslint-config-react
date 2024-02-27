@@ -1,4 +1,5 @@
 {
 	"import": ["@oly_op/cspell-dict/cspell-ext.json"],
+	"ignorePaths": ["node_modules", "dist"],
 	"words": ["TSES"]
 }

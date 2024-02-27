@@ -1,9 +1,10 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 
 const configuration: TSESLint.Linter.ConfigType = {
-	extends: ["airbnb", "airbnb-typescript", "airbnb/hooks", "plugin:jsx-a11y/recommended"],
-	plugins: ["jsx-a11y"],
+	plugins: ["jsx-a11y", "react-hooks"],
+	extends: ["airbnb", "airbnb-typescript", "airbnb/hooks", "plugin:jsx-a11y/strict", "plugin:react-hooks/recommended"],
 	parserOptions: {
+		project: "./tsconfig.eslint.json",
 		ecmaFeatures: {
 			jsx: true,
 		},
@@ -22,7 +23,6 @@ const configuration: TSESLint.Linter.ConfigType = {
 		"react/jsx-props-no-spreading": "off",
 		"jsx-a11y/tabindex-no-positive": "off",
 		"react/jsx-no-useless-fragment": "off",
-		"jsx-a11y/label-has-associated-control": "off",
 		"react/jsx-indent": ["error", "tab"],
 		"react/jsx-indent-props": ["error", "tab"],
 		"react/jsx-fragments": ["error", "element"],
